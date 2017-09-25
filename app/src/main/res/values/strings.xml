@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BuildSingleScreenApp</string>
+    <string name="restName"> Tekram Restaurant </string>
+    <string name="address"> 16 Abdel Khalek Sarwat Street , Cairo , Egypt </string>
+    <string name="workHours"> Work Hours 24/24 </string>
+    <string name="tel"> Tel: 0223911946 , 0223911949 </string>
+    <string name="addressImage"> addressImage </string>
+    <string name="telImage"> telImage </string>
+    <string name="resImage"> resImage </string>
+</resources>

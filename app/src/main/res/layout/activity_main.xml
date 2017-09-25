@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.buildsinglescreenapp.buildsinglescreenapp.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/myImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/resImage"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_restname"/>
+
+    <LinearLayout
+        android:id="@+id/textContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/myImage">
+
+    <TextView
+        style="@style/mytext"
+        android:id="@+id/name"
+        android:textSize="28sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:textColor="@android:color/holo_green_dark"
+        android:text="@string/restName"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/image_view_address"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/addressImage"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_address" />
+
+      <TextView
+             style="@style/mytext"
+             android:id="@+id/address"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@android:color/white"
+             android:text="@string/address" />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_view_phone"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/telImage"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_phone" />
+
+        <TextView
+            style="@style/mytext"
+            android:id="@+id/tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/tel"/>
+    </LinearLayout>
+
+        <TextView
+            style="@style/mytext"
+            android:id="@+id/hours"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:text="@string/workHours"/>
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>
